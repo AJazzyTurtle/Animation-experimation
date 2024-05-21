@@ -1,0 +1,23 @@
+﻿<Window x:Class="Animation_experimation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animation_experimation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Name="rect" HorizontalAlignment="Center" Height="100" Stroke="Black" VerticalAlignment="Center" Width="100">
+            <Rectangle.Fill>
+                <SolidColorBrush x:Name="colorBrush" Color="White"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Name="btnAnimate" Height="20" Width="50" Content="Animate" HorizontalAlignment="Left" Margin="372,302,0,0" VerticalAlignment="Top" Click="btnAnimate_Click" MouseEnter="grow" MouseLeave="shrink"/>
+        <MediaElement 
+            x:Name="ADVideo" 
+            UnloadedBehavior="Manual"
+            Margin="38,0,44,217"
+            Source="C:\Users\S2200844\OneDrive - Notre Dame Catholic Sixth Form College\Year two\Mr Levy\Programs\Animation experimation\Animation experimation\he.mp4"
+            Height="199" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
